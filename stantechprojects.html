@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stantech Project Ideas</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #0a0f2c;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #001f54;
+        padding: 20px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        color: #00d4ff;
+    }
+    .container {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #0f194a;
+        border-radius: 10px;
+    }
+    .project {
+        background-color: #14255b;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
+    .project h2 {
+        margin-top: 0;
+        color: #00d4ff;
+    }
+    .project p {
+        margin: 5px 0;
+    }
+    .vote-btn {
+        background-color: #00d4ff;
+        color: #001f54;
+        border: none;
+        padding: 8px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    .vote-btn:hover {
+        background-color: #0093cc;
+    }
+    .vote-count {
+        font-weight: bold;
+        color: #ffdd00;
+    }
+    .official-link {
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 18px;
+    }
+    .official-link a {
+        color: #00d4ff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .official-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Stantech Project Ideas</h1>
+</header>
+
+<div class="container">
+
+    <!-- Projects -->
+    <div class="project">
+        <h2>1. Smart Irrigation System</h2>
+        <p><strong>Target Market:</strong> Farmers, Agribusinesses</p>
+        <p><strong>Why Marketable:</strong> Reduces water waste, increases crop yields; Kenya has growing smart agriculture adoption.</p>
+        <button class="vote-btn" onclick="vote(this)">Vote</button> <span class="vote-count">0</span> votes
+    </div>
+
+    <div class="project">
+        <h2>2. Drone Delivery Service</h2>
+        <p><strong>Target Market:</strong> E-commerce businesses, pharmacies, hospitals</p>
+        <p><strong>Why Marketable:</strong> Fast, contactless delivery in urban and rural areas.</p>
+        <button class="vote-btn" onclick="vote(this)">Vote</button> <span class="vote-count">0</span> votes
+    </div>
+
+    <div class="project">
+        <h2>3. AI-Powered Crop Disease Detector</h2>
+        <p><strong>Target Market:</strong> Smallholder farmers, agricultural NGOs</p>
+        <p><strong>Why Marketable:</strong> Early detection reduces crop losses.</p>
+        <button class="vote-btn" onclick="vote(this)">Vote</button> <span class="vote-count">0</span> votes
+    </div>
+
+    <div class="project">
+        <h2>4. Solar-Powered Charging Stations</h2>
+        <p><strong>Target Market:</strong> Urban commuters, rural communities</p>
+        <p><strong>Why Marketable:</strong> Clean energy + solves phone charging problem where electricity is unreliable.</p>
+        <button class="vote-btn" onclick="vote(this)">Vote</button> <span class="vote-count">0</span> votes
+    </div>
+
+    <div class="project">
+        <h2>5. Mobile Payment Integration Platform</h2>
+        <p><strong>Target Market:</strong> SMEs, online businesses</p>
+        <p><strong>Why Marketable:</strong> Kenya has high mobile payment adoption.</p>
+        <button class="vote-btn" onclick="vote(this)">Vote</button> <span class="vote-count">0</span> votes
+    </div>
+
+    <!-- Add remaining projects similarly -->
+
+    <div class="project">
+        <h2>6. AI Tutoring App</h2>
+        <p><strong>Target Market:</strong> High school and university students</p>
+        <p><strong>Why Marketable:</strong> Personalized learning support for students preparing for exams.</p>
+        <button class="vote-btn" onclick="vote(this)">Vote</button> <span class="vote-count">0</span> votes
+    </div>
+
+    <div class="project">
+        <h2>7. Digital Health Records App</h2>
+        <p><strong>Target Market:</strong> Clinics, hospitals, patients</p>
+        <p><strong>Why Marketable:</strong> Improves healthcare efficiency; digital record-keeping is still underutilized.</p>
+        <button class="vote-btn" onclick="vote(this)">Vote</button> <span class="vote-count">0</span> votes
+    </div>
+
+    <div class="project">
+        <h2>8. Smart Home Automation Kits</h2>
+        <p><strong>Target Market:</strong> Urban households, tech enthusiasts</p>
+        <p><strong>Why Marketable:</strong> Convenience, security, and energy savings.</p>
+        <button class="vote-btn" onclick="vote(this)">Vote</button> <span class="vote-count">0</span> votes
+    </div>
+
+    <div class="project">
+        <h2>9. E-Waste Recycling Platform</h2>
+        <p><strong>Target Market:</strong> Businesses, electronics users</p>
+        <p><strong>Why Marketable:</strong> Growing e-waste problem; eco-conscious solutions are trending.</p>
+        <button class="vote-btn" onclick="vote(this)">Vote</button> <span class="vote-count">0</span> votes
+    </div>
+
+    <div class="project">
+        <h2>10. Online Job & Gig Marketplace</h2>
+        <p><strong>Target Market:</strong> Freelancers, students, SMEs</p>
+        <p><strong>Why Marketable:</strong> High demand for flexible work and freelance opportunities.</p>
+        <button class="vote-btn" onclick="vote(this)">Vote</button> <span class="vote-count">0</span> votes
+    </div>
+
+    <!-- Continue for projects 11-20 -->
+
+    <div class="official-link">
+        <p>Check out the <a href="https://stantech343.com" target="_blank">Stantech Official Website</a></p>
+    </div>
+</div>
+
+<script>
+function vote(button) {
+    const countSpan = button.nextElementSibling;
+    let count = parseInt(countSpan.textContent);
+    count++;
+    countSpan.textContent = count;
+}
+</script>
+
+</body>
+</html>
